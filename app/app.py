@@ -136,7 +136,7 @@ def update():
     for keep_list in configManager.config['keep_lists']:
         keep_list_name = list(keep_list.keys())[0]
         keep_list_options = list(keep_list.values())[0]
-        log.info(f'transfering {keep_list_name} list from keep to todoist')
+        # log.info(f'transfering {keep_list_name} list from keep to todoist')
         transfer_list(keep_list_name, 
                       parse_key(keep_list_options, 'todoist_project'), 
                       parse_key(keep_list_options, 'due_str_en'), 
