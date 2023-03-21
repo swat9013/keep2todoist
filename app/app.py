@@ -134,6 +134,7 @@ def transfer_note():
       todoist_api.add_task(content=note.text)
       log.info(f'\t-> {note.text}')
       note.delete()
+    keep.sync()
 
 def update():
     if configManager.needs_update():
